@@ -3,14 +3,14 @@ const mongoose = require("mongoose");
 require('dotenv').config();
 const path = require("path");
 
-const bookRoutes = require("./routes/bookRoutes");
-const userRoutes = require("./routes/userRoutes");
+const bookRoutes = require("./routes/book");
+const userRoutes = require("./routes/user");
 
 // Créer une application Express
 const app = express();
 
 //connect to database mongoDB
-mongoose.connect(`mongodb+srv://vincentp9:<vincentp9>@cluster0.k8frc.mongodb.net/`,
+mongoose.connect('mongodb+srv://vincentp9:vincentp9@cluster0.k8frc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true
