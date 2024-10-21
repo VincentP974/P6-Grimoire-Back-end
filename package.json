@@ -1,12 +1,11 @@
 {
   "name": "back-end",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {},
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "express": "^4.21.1"
-  }
+  "description": ""
 }
