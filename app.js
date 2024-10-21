@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-require("dotenv").config({ path: ".env.local" });
+require('dotenv').config();
 const path = require("path");
 
 const bookRoutes = require("./routes/bookRoutes");
